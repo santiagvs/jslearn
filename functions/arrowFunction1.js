@@ -2,11 +2,11 @@ let dobro = function (a) {
     return 2 * a
 }
 
-dobro = (a) => {
+dobro = (a) => { // Arrow é sempre anônima
     return 2 * a
 }
 
-dobro = a => 2 * a  // retorno implícito
+dobro = a => 2 * a  // Arrow function tem retorno implícito
 console.log(dobro(Math.PI))
 
 let ola = function() {

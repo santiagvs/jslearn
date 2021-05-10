@@ -8,4 +8,4 @@ function Pessoa() {
     }/*.bind(this)*/, 1000)
 }
 
-new Pessoa 
+new Pessoa // instanciar a função para criar um objeto

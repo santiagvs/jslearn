@@ -9,8 +9,8 @@ const sequencia = {
     }
 }
 
-console.log(sequencia.valor, sequencia.valor)
+console.log(sequencia.valor, sequencia.valor) // aqui o get/set estão sendo chamados.
 sequencia.valor = 1000
 console.log(sequencia.valor, sequencia.valor)
-sequencia.valor = 900
+sequencia.valor = 900 // aqui ocorre o que foi estabelecido no set: o valor não pode ser diminuído.
 console.log(sequencia.valor, sequencia.valor)

@@ -34,11 +34,12 @@ const carro = {
 }
 
 carro.proprietario.endereco.numero = 1000
-carro['proprietario']['endereco']['numero'] = 'Av Gigante'
+carro['proprietario']['endereco']['logradouro'] = 'Av Gigante'
 console.log(carro)
-
+console.log('----------------------------------------')
 delete carro.condutores
 delete carro.proprietario.endereco
 delete carro.calcularValorSeguro
 console.log(carro)
-console.log(carro.condutores)
+console.log(carro.condutores) // Quando os atributos não existirem, o JS retorna como undefined
+// console.log(carro.condutores.length) // Nesse caso, retorna um erro, porque não tem como retornar uma propriedade de algo indefinido.

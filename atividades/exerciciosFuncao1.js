@@ -73,7 +73,7 @@ console.log(nomeDoMes(4))
 */
 
 // outra maneira de se fazer:
-
+/*
 function receberNomeDoMes(numero) {
     const mapeamento = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho',
     'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro']
@@ -82,22 +82,13 @@ function receberNomeDoMes(numero) {
 }
 
 console.log(receberNomeDoMes(1))
-
-/*
-function maiorOuIgual(num1, num2) {
-    if (num1 > num2 || num1 === num2) {
-        return true
-    } else {
-        return false
-    }
-}
-
+*/
 function maiorOuIgual(num1, num2) {
     if(typeof num1 != typeof num2) return false
+
     return num1 >= num2
-    }
+}
 
 console.log(maiorOuIgual(1,0))
 console.log(maiorOuIgual(5,1))
 console.log(maiorOuIgual(0,"0"))
-*/

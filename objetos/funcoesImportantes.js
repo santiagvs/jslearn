@@ -4,9 +4,9 @@ const pessoa = {
     peso: 13
 }
 
-console.log(Object.keys(pessoa))
-console.log(Object.values(pessoa))
-console.log(Object.entries(pessoa))
+console.log(Object.keys(pessoa)) // Pega as chaves do objeto (os "nomes" dos objetos)
+console.log(Object.values(pessoa)) // Pega os valores do objeto
+console.log(Object.entries(pessoa)) // Transforma o objeto em um array maior e subarray com objetos menores
 
 Object.entries(pessoa).forEach(([chave, valor]) => {  // destructuring
     console.log(`${chave}: ${valor}`)

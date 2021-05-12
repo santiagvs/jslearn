@@ -7,6 +7,8 @@ const pessoa = {
     }
 }
 
+// O destructuring de objetos puxa apenas os valores.
+
 const { nome, idade } = pessoa
 console.log(nome, idade)
 
@@ -19,4 +21,6 @@ console.log(sobrenome, bemHumorada)
 const { endereco: { logradouro, numero, cep } } = pessoa
 console.log(logradouro, numero, cep)
 
-// Quando se vai acessar um dado que está aninhado, tem que se ter certeza que existe
+/* Quando se vai acessar um dado que está aninhado, tem que se ter certeza que existe, exemplo:
+const { conta: { ag, num } } = pessoa
+console.log(ag, num) */

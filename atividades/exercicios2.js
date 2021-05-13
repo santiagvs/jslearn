@@ -61,3 +61,13 @@ function receberPrimeiroEUltimoElemento(elementos) {
 console.log(receberPrimeiroEUltimoElemento([7,14, 'jacaré']))
 console.log(receberPrimeiroEUltimoElemento([-100, "aplicativo", 16]))
 */
+
+function removerPropriedade(objeto, nomeDaPropriedade) {
+    const copia = Object.assign({}, objeto) // gera um objeto novo concatenando
+    delete copia[nomeDaPropriedade]
+
+    return copia
+}
+
+console.log(removerPropriedade({a: 1, b: 2}, "a"))
+console.log(removerPropriedade({ id: 20, nome: "caneta", descricao: "Não preenchido" }, "descricao"))

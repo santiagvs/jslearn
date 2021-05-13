@@ -9,7 +9,7 @@ console.log(alunos.map(a => a.nota))
 
 const resultado = alunos.map(a => a.nota).reduce(function(acumulador, atual) {
     console.log(acumulador, atual)
-    return acumulador + atual
+    return acumulador + atual // soma o valor de acordo com o índice ACUMULADO, somado com os valores já passados com o valor inicial
 }, 0) // esse é o valor inicial sendo passado
 
 console.log(resultado)

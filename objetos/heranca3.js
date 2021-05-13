@@ -1,6 +1,6 @@
 const pai = { nome: 'Pedro', corCabelo: 'Preto' }
 
-const filha1 = Object.create(pai)
+const filha1 = Object.create(pai) // Passa o 'pai' como primeiro parâmetro, ele já cria o objeto filha1 com protótipo de pai
 filha1.nome = 'Ana'
 console.log(filha1.corCabelo)
 
@@ -16,6 +16,6 @@ console.log(Object.keys(filha1))
 console.log(Object.keys(filha2))
 
 for (let key in filha2){
-    filha2.hasOwnProperty(key) ?
+    filha2.hasOwnProperty(key) ? // ver se o atributo é autêntico ou herda de outro objeto.
         console.log(key) : console.log(`Por herança: ${key}`)
 }

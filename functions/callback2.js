@@ -11,12 +11,13 @@ for (let i in notas) {
 console.log(notasBaixas1)
 
 // Com callback
-const notasBaixas2 = notas.filter(function (nota) {
+const notasBaixas2 = notas.filter(function (nota) { // filtra os elementos de array e que aplicada numa função, vai dar um callback retornando true ou false
     return nota <= 7
 })
 
 console.log(notasBaixas2)
 
 // Arrow
-const notasBaixas3 = notas.filter(nota => nota < 7) // abordagem mais funcional
+const notasMenorQue7 = nota => nota < 7 // função reutilizável
+const notasBaixas3 = notas.filter(notasMenorQue7) // abordagem mais funcional
 console.log(notasBaixas3)

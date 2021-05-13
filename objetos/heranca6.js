@@ -5,7 +5,7 @@ function Aula(nome, videoID) {
 
 const aula1 = new Aula('Bem vindo', 123)
 const aula2 = new Aula('Até breve', 456)
-console.log(aula1, aula2)
+console.log(aula1, "/" ,aula2)
 
 // Simulando o operador new
 function novo(f, ...params) {
@@ -17,4 +17,4 @@ function novo(f, ...params) {
 
 const aula3 = novo(Aula, 'Bem vindo', 123)
 const aula4 = novo(Aula, 'Até breve', 456)
-console.log(aula3, aula4)
+console.log(aula3, "/", aula4)

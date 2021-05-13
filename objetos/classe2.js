@@ -7,7 +7,7 @@ class Avo {
 class Pai extends Avo { // uma classe tem outra classe como protótipo
     constructor(sobrenome, profissao = 'Professor') {
         super(sobrenome) // chamando o construtor de Avo, a superclasse
-        this.profissao = profissao
+        this.profissao = profissao // recebe a profissao declarada no parâmetro
     }
 }
 

@@ -1,4 +1,4 @@
-Repositório diariamente atualizado com correções, modificações, assuntos novos aprendidos no tópico de JavaScript.
+Daily updated repository with changes or new contents learned on JavaScript and related (Node, React, etc.)
 
-Como são baseados nas aulas assistidas, então os códigos usam variáveis/constantes escritas em PT-BR. Todavia, quando começar a upar projetos próprios aqui,
-serão feitos em inglês, por convenção.
+The codes are written on PT-BR (variables and constants, as well the texts and comments). 
+However, when I start to post new projects made by myself, they'll be in English by convention.

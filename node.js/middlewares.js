@@ -14,8 +14,8 @@ const passo3 = (ctx) => ctx.valor3 = 'mid3'
 
 const exec = (ctx, ...middlewares) => {
     const execPasso = indice => {
-        middlewares && indice < middlewares.length &&
-            middlewares[indice](ctx, () => execPasso(indice+1))
+        middlewares && indice < middlewares.length && // verificando se o índice é menor que o comprimento das funções fora do array
+            middlewares[indice](ctx, () => execPasso(indice+1)) // recursividade
     }
     execPasso(0)
 }
